@@ -17,7 +17,7 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in {
           crawl4ai = pkgs.callPackage ./tools/crawl4ai {};
-          catppuccin_mocha-zsh-syntax-highlighting = pkgs.callPackage ./themes/catppuccin/zsh-syntax-highlighting.nix {};
+          catppuccin_mocha-zsh-syntax-highlighting = pkgs.callPackage ./shell/themes/catppuccin/zsh-syntax-highlighting.nix {};
         });
     };
 }
